@@ -1,0 +1,44 @@
+html,body{
+  font-size: 16px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding:50px;
+}
+header{
+  text-align: center;
+  font-size: 2em;
+  font-weight: 800;
+  border-bottom: 1px solid black;
+  margin-left:40px;
+  margin-right: 40px;
+}
+
+#Quote-box{
+  border: 2px solid white;
+  border-radius: 5%;
+  width:70%;
+  padding:50px;
+  background-color: rgba(255,255,255,1);
+
+}
+#author{
+  float:right;
+}
+.buttons{
+  float:right;
+
+}
+button{
+  padding: 10px;
+}
+a{
+  padding: 10px;
+}
+
+i {
+  color:#1DA1F2;
+}
