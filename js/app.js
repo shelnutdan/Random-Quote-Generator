@@ -24,6 +24,11 @@ $(document).ready(function(){
     },'jsonp');
 
   })
+  $('#twitter').on('click',function(){
+    let myUrl='https://twitter.com/intent/tweet?text=' + document.getElementById("text").innerHTML+"-"+document.getElementById("author").innerHTML
+    window.open(myUrl, '#twitter');
+  })
+
 });
 
 
