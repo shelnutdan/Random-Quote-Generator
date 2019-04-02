@@ -15,27 +15,34 @@
   <script type="text/javascript" src="./js/app.js"></script>
 </head>
 <body>
+    <div id="content">
+      <div id="loading">
 
-    <header>Random Quote Generator</header>
-    <div id='description'>
-      <p> Click on the the new quote button to get a random quote!</p>
+      </div>
+      <div id="isItLoaded">
+        <header>Random Quote Generator</header>
+        <div id='description'>
+          <p> Click on the the new quote button to get a random quote!</p>
+        </div>
+        <main>
+          <div class='container'>
+            <div id='Quote-box'>
+              <!--Where the quote will display with a quote and author-->
+              <div id='text'></div>
+              <div id='author'></div>
+
+            </div>
+            </div>
+            <div class='buttons'>
+              <!--Buttons that when clicked will generate a new quote and allows for the option to tweet the quote-->
+              <a type="button" class="quote_button">New Quote</a>
+              <a type="button" id='twitter' class="tweet_button" ><i class="fa fa-twitter">Tweet</i></a>
+            </div>
+
+        </main>
+      </div>
     </div>
-    <main>
-      <div class='container'>
-        <div id='Quote-box'>
-          <!--Where the quote will display with a quote and author-->
-          <div id='text'></div>
-          <div id='author'></div>
 
-        </div>
-        </div>
-        <div class='buttons'>
-          <!--Buttons that when clicked will generate a new quote and allows for the option to tweet the quote-->
-          <a type="button" class="quote_button">New Quote</a>
-          <a type="button" id='twitter' class="tweet_button" ><i class="fa fa-twitter">Tweet</i></a>
-        </div>
-
-    </main>
 
 </body>
 </html>

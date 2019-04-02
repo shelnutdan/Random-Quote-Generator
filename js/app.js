@@ -1,8 +1,23 @@
+
+/*Loading Animation function waiting for the page to display*/
+let myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loading").style.display = "none";
+  document.getElementById("isItLoaded").style.display = "block";
+}
+
+
 /*URL that the application uses to pull quote*/
 let url="https://api.forismatic.com/api/1.0/?method=getQuote&key=457653&format=jsonp&lang=en&jsonp=?"
 
 /*Click functions*/
 $(document).ready(function(){
+  showPage()
   /* Pulls a random  quote and its author on the page and sets random background color*/
   $.getJSON(url,function(data){
 
@@ -18,7 +33,6 @@ $(document).ready(function(){
       document.getElementById("text").innerHTML=data.quoteText
       document.getElementById("author").innerHTML="-"+data.quoteAuthor
     },'jsonp');
-    console.log(randomRGBAColor())
 
   })
   /*Posts the quote and author to tweeter*/
