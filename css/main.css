@@ -1,6 +1,6 @@
 html,body{
   font-size: 25px;
-  font-family: system-ui;
+  font-family: 'system-ui';
 }
 
 .container{
@@ -18,6 +18,10 @@ header{
   margin-right: 40px;
 }
 
+#description{
+  text-align: center;
+  font-weight: 600;
+}
 #Quote-box{
   border: 2px solid #fff;
   border-radius: 5%;
@@ -44,8 +48,19 @@ button{
   margin: 5px;
   width:75px;
 }
+a:hover{
+  background-color: rgb(222, 226, 232,0.8);
+  cursor:pointer;
+}
 a{
-  padding: 10px;
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10%;
+  background-color: #fff;
+  border: 1px solid #000;
+  margin: 5px;
+  width:75px;
 }
 
 i {
